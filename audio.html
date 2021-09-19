@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Exemplos de áudio</h2>
+    <!--
+        A tag <audio> é usado para colocar arquivos de áudio em uma página HTML.
+        Atributos 
+            - Controls:
+            Exibe os controles de mídia (reproduzir/pausar, volume, etc.)
+            - Autoplay: inicia a reprodução do áudio assim que a página é carregada
+    -->
+    <audio controls autoplay src="audio/trilha.mp3">
+    </audio>
+
+    <h2>variadas fontes de audio</h2>
+
+    <audio controls preload="metadata">
+        <source src="audio/trilha.mp3"
+        type="audio/mpeg">
+        <source src="audio/trilha.ogg"
+        type="audio/ogg">
+        <source src="audio/trilha.wav"
+        type="audio/wav">
+    </audio>
+</body>
+</html>

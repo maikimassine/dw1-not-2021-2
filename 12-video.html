@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo em HTML</title>
+</head>
+<body>
+    <h1>Vídeo em HTML</h1>
+
+    <h2>Formatos de vídeo</h2>
+
+    <p>Para entender os formatos de vídeo, é preciso compreender primeiro o que são os <em>codecs</em> (codificadores/decodificadores). Trata-se de algoritmos que codificam e depois decodificam várias imagens em sequência para criar a ilusão de movimento. Alguns <em>codecs</em> de vídeo não lidam com a parte de som. Com isso, torna-se necessário acrescentar o áudio em uma parte separada, usando um dos formatos de áudio já estudados.</p>
+
+    <p>Para juntar as partes de vídeo, áudio e outras informações (como, por exemplo, as legendas) em um único arquivo, existem os formatos <em>container</em>. Esses formatos podem parecer iguais por fora, enquanto, por dentro, trazem trilhas multimídia produzidas com <em>codecs</em> diferentes. Por isso, o equipamento que irá reproduzi-los precisa, além de reconhecer o formato do arquivo <em>container</em>, ter também instalados os <em>codecs</em> para decodificar áudio e vídeo. Os navegadores trazem instalados os <em>codecs</em> mais comuns.</p>
+
+    <ul>
+        <li><strong>MP4</strong>: formato introduzido em 2001 pela ISO (<em>International Standards Organization</em>, Organização Internacional de Padrões), e que se tornou o padrão de mercado. É um formato <em>container</em>, que suporta vários <em>codecs</em> tanto de áudio como de vídeo, que usualmente estão sob compressão.</li>
+        
+        <li><strong>M4V:</strong> formato introduzido pela Apple, tecnicamente semelhante ao MP4. No entanto, esse formato suporta DRM (<em>Digital Rights Management</em>, Gerenciamento de Direitos Digitais), permitindo que conteúdos protegidos por direitos autorais só possam ser reproduzidos por quem tiver adquirido a licença para tal.</li>
+
+        <li><strong>WEBM</strong>: projeto irmão do WebP, iniciado pela Fundação Xiph.org em 2010 e depois assumido pelo Google. É também um formato <em>container</em>, que promete melhor qualidade de compressão em um menor tamanho de arquivo quando comparado ao MP4.</li>
+
+        <li><strong>OGV:</strong> formato <em>container</em> da família OGG Vorbis, introduzido pela Fundação Xiph.org em 2004, de livre utilização.</li>
+
+        <li><strong>MKV</strong> (Matroska): formato <em>container</em>, capaz de armazenar vídeo, várias trilhas de áudio e legendas em um único arquivo. Não está associado a nenhum <em>codec</em> em particular. Possui uma biblioteca de código aberto que pode ser usada gratuitamente por qualquer aplicação. Suporta criptografia e DRM.</li>
+
+        <li><strong>AVI</strong>: sigla para <em>Audio Video Interleaved</em> (Áudio e Vídeo Entrelaçados), introduzido pela Microsoft em 1992. É um formato sem compressão, tendendo a gerar arquivos muito grandes.</li>
+    </ul>
+
+    <h2>Problemas com a hospedagem de vídeos</h2>
+
+    <p>Hospedar vídeos em seu próprio <em>website</em> pode sair caro, pois várias hospedagens atualmente cobram por tráfego. Um típico vídeo de 500MB de tamanho, por exemplo, ao ser reproduzido 20 vezes, terá consumido 10GB de tráfego (ou de banda, como se ouve com mais frequência).</p>
+
+    <p>Portanto, na maioria das vezes, o melhor a fazer é hospedar seu vídeo em serviços como o Youtube ou o Vimeo e apenas incorporar ("linkar") o vídeo em seu <em>site</em>. Enquanto vídeos hospedados no Youtube geralmente estarão disponíveis para um público amplo, enquanto o Vimeo, mediante pagamento, permite restringir o acesso aos vídeos.</p>
+
+    <h2>Exemplos de videos html</h2>
+     
+    <video controls preload="metadata"  width="600px" poster="video/MicrosoftTeams-image (4).png">
+
+        <source src="video/instalar-teams.mp4"
+        type="video/mp4">
+        <source src="video/instalar-teams.webm"
+        type="video/webm">
+        <source src="video/instalar-teams.ogv"
+        type="video/ogg">
+
+        <p>Seu navegador não é capas de reproduzir videos nativamente. clique aqui <a href="video/instalar-teams.mp4" 
+        download>aqui </a>para baixar aquivo.</p>
+        
+    </video>
+
+    <h2>Video com múltiplas fontes</h2>
+
+    <video controls preload="metadata" src="video/instalar-teams.mp4" width="600px" poster="video/MicrosoftTeams-image (4).png">
+        <p>Seu navegador não é capas de reproduzir videos nativamente. clique aqui <a href="video/instalar-teams.mp4" download>aqui </a>para baixar aquivo.</p>
+    </video>
+
+    <h2>Video incorporado do Youtube</h2>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0755SXCTCN0" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Video incorporado vimeo</h2>
+
+    <iframe src="https://player.vimeo.com/video/114103722?h=39caf5e3ec" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/114103722">Scorpions - Holiday   (Acoustica)</a><a href="https://vimeo.com/user25496728">
+    </a> on <a href="https://vimeo.com"></a>.</p>
+
+
+        
+
+</body>
+</html>

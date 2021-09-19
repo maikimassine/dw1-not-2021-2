@@ -1,0 +1,93 @@
+ 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        /*
+            Regras iniciadas com # aplicam-se apenas aos
+            elementos HTML com o id correspondente
+        */
+        #logo {
+            /* Alterar a largura da imagem */
+            width: 300px;
+        }
+        #publi {
+            /* Alinha o texto E A IMAGEM ao centro */
+            text-align: center;
+            background-image: url('img/light-carbonfiber.png');
+            /* Ajustando o espaço interno do elemento */
+            padding: 30px;
+            /* Coloca borda em volta do elemento */
+            border: 2px solid white;
+        }
+
+        /* Regra que só vai afetar o figcaption que está dentro do figure cujo id é publi */
+        #publi figcaption {
+            font-family: Calibri;
+            font-style: italic;
+        }
+
+        /* Regra que só vai afetar o img que está dentro do figure cujo id é publi */
+        #publi img {
+            /* Coloca bordas arredondadas na imagem */
+            border-radius: 16px;
+            /* A largura máxima da imagem será a largura de seu pai (no caso, o figure) */
+            max-width: 100%;
+        }
+
+        body {
+            /* Colocar uma imagem de fundo na página. Se a imagem for menor que a página, ela será repetida na horizontal e na vertical (ladrilhamento) */
+            background-image: url('img/metal.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!--
+        <img>: usada para exibir imagens na página
+        Atributos:
+        - src: indica a fonte (source) da imagem, ou em outras palavras
+               onde está o arquivo de imagem que deve ser exibido
+        - alt: especifica um texto alternativo que será exibido no lugar
+               da imagem caso esta não possa ser carregada
+    -->
+    <!--
+        O atributo id identifica unicamente um elemento dentro de uma página HTML. Pode ser adicionado a qualquer elemento.
+    -->
+    <img id="logo" src="img/apptiva-logo.png" alt="Logotipo da empresa Apptiva">
+
+    <img id="icone" src="img/apptiva-icon.png" alt="Ícone da empresa Apptiva">
+
+    <!--
+        <figure>: representa uma figura, formada por uma imagem (<img>) e uma legenda (<figcaption>)
+    -->
+    <figure id="publi">
+        <!--
+            O atributo aria-label (que pode ser adicionado
+            a qualquer elemento) provê uma forma de descrever o conteúdo para o uso de leitores de tela por deficientes visuais.
+            Faz parte dos recursos de ACESSIBILIDADE do HTML.
+        -->
+        <!--
+            O atributo title (também pode ser adicionado a a qualquer elemento) exibe uma etiqueta flutuante (tooltip) com o texto fornecido quando o elemento é sobrevoado pelo ponteiro do mouse.
+        -->
+        <img src="img/distance-education-1000px.jpg" alt="Educação a distância" aria-label="Menina de cabelos longos escrevendo com um lápis em um caderno, tendo à sua frente um tablet e um notebook" title="Imagem meramente ilustrativa">
+
+        <figcaption>Estudando com a Apptiva, seu sucesso é garantido!</figcaption>
+        
+    </figure>
+
+    <!--
+        Regras CSS também podem ser aplicadas a um elemento HTML usando o atributo style
+    -->
+    <img src="img/svg-logo.svg" alt="Logotipo do formato SVG" style="width: 200px">
+
+    <div>
+        <p>GIF animado</p>
+        <img src="img/world.gif" alt="Mundo girando">
+    </div>
+
+</body>
+</html>
