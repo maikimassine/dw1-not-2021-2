@@ -1,0 +1,47 @@
+        /*
+        UNIDADES DE MEDIDAS:
+
+        1) Unidades absolutas: 
+            - px (pixel): corresponte a um ponto de iluminação na tela, ou no papel, equivale a 1/96 de uma polegada (2,54cm). Seu tamanho depende da resolução da tela.
+            - pt (point): normalmente utilizados para especificar o tamanho de fonte (1/72 de uma polegada);
+            - mm (milímetros): para impressão;
+            - cm (centimetros): para impressão;
+            - in (inches, polegatas): para impressão;
+        
+        2) Unidades relativas:
+            - %: calculado em relação ao elemento pai;
+            - em: usada para fontes. Siginifica 100% do tamanho da fonte do pai
+        */
+        #box1 {
+            background-color:lightgray;
+            text-align: center;
+            border: 4px solid lightslategrey;
+            width: 200px; /*largura*/
+            height: 200px; /*altura*/
+            font-size: 25pt;
+            
+        }
+
+        #box2 {
+            background-color: yellowgreen;
+            border: 4px dotted orange;
+            width: 6cm;
+            height: 20mm;
+        }
+
+        #pai1 {
+            background-color: olivedrab;
+            border: 4px dashed greenyellow;
+            text-align: center;
+            width: 600px;
+            height: 300px;
+            font-size: 50pt;
+        }
+
+        #filho1 {
+            background-color: burlywood;
+            border: 3px solid yellow;
+            width: 50%; /*Relativa ao elemento pai*/
+            height: 70%; /*Relativa ao elemento pai*/
+            font-size: 0.5em; /*50% do tamanho da fonte do pai*/
+        }
