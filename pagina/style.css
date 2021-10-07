@@ -1,0 +1,112 @@
+:root {
+    --cor-prim: #F9D84D;
+    --cor-prim-clara: #FFEC9C;
+    --cor-secum: #F94D58;
+    --cor-secun-clara: #FD9CA3;
+    --cor-fundo: #333333;
+    --cor-texto: #cccccc;
+    --cor-fundo-clara: #555555;
+}
+
+/** CSS RESET ***/
+* {
+    font-family: Calibri, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+    background-color: var(--cor-fundo);
+    color: var (--cor-texto);
+
+}
+/*********************/
+/*
+Cor primária: #F9D84D
+Cor primária clara: #FFEC9C
+Cor secundária: #F94D58
+Cor secundária: clara: #FD9CA3
+cor de fundo: #333333
+cor do texto: #cccccc
+*/
+/*variaveis*/
+
+
+header{
+    display:flex;
+    justify-content:center; /*centralização horizontal*/
+    align-items:center; /*centralização vertical*/
+    background-color: var(--cor-prim);
+    min-height: 50px; /*altura minima*/
+    flex-wrap: wrap;
+}
+
+#img-logo {
+    background-color: transparent !important;
+}
+main{
+    display:flex;
+    justify-content:center; /*centralização horizontal*/
+    align-items:stretch; /*todos os filhos com 100% do pai*/
+    min-height: 100px; /*altura minima*/
+}
+footer {
+    display:flex;
+    justify-content:center; /*centralização horizontal*/
+    align-items:center; /*centralização vertical*/
+    background-color:var var(--cor-fundo-clara);
+    min-height: 50px; /*altura minima*/
+}
+
+nav {
+    display:flex;
+    justify-content:center; /*centralização horizontal*/
+    align-items:center; /*centralização vertical*/
+    background-color: var(--cor-secum);
+    min-height: 25px; /*altura minima*/
+    width: 100%;
+    margin: 5px;
+}
+
+
+section {
+        display:flex;
+        justify-content:center; /*centralização horizontal*/
+        align-items:flex-start; /*centralização vertical*/
+        flex-direction: column;
+        border: 1px solid indigo;
+        background-color: plum;
+        width: 75%;
+        margin: 5%
+
+        
+}
+
+aside {
+    display:flex;
+    justify-content:center; /*centralização horizontal*/
+    align-items:center; /*centralização vertical*/
+    border: 1px dashed dimgray;
+    background-color:lightgrey;
+    width: 25%;
+    
+}
+
+article {
+    display:flex;
+    justify-content:center; /*centralização horizontal*/
+    align-items:center; /*centralização vertical*/
+    border: 1px solid sienna;
+    background-color:linen;
+    margin: 5px;
+    min-height: 100px;
+    width: 100%;
+    
+}
+
+@media screen and (max-width:600px) {
+    main {
+        flex-direction: column;
+    }
+    section, aside {
+        width: 100%;
+    }
+}
